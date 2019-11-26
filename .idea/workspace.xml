@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34bedd68-5125-44b8-ace8-c6093552854e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MobileExpense.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/RecordList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MobileExpense.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySQL_Connection_Sample/DButil.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL_Connection_Sample/DButil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/DateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Record.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/RecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RecordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Report.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/UserProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UserProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RecordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/UserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UserProgram.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,6 +44,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -100,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574807043267</updated>
-      <workItem from="1574807044982" duration="1555000" />
+      <workItem from="1574807044982" duration="5364000" />
     </task>
     <servers />
   </component>

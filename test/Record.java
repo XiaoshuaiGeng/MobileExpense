@@ -7,15 +7,24 @@ public class Record {
 	private String Merchant_Name;
 	private int id;
 	private String Category;
-	//private int Currency;	//鏄浆鍖栬繃鐨刄SD, 涔嬪墠闇�瑕佹牴鎹甤urrency rate and input杞崲
+	//private int Currency;
 	private double amount;
 	
 	public Record() {
 
 	}
-	
-	public Record(Date myDate,String Merchant_Name,String Category,double amount) {
-		
+
+	public Record(Record r){
+		this.id = r.id;
+		this.myDate = r.myDate;
+		this.Merchant_Name = r.Merchant_Name;
+		this.Category = r.Category;
+		this.amount = r. amount;
+	}
+
+	public Record(int id, Date myDate,String Merchant_Name,String Category,double amount) {
+
+		this.id = id;
 		this.myDate=myDate;
 		this.Merchant_Name=Merchant_Name;
 		this.Category=Category;
@@ -34,6 +43,7 @@ public class Record {
 	public String getMerchant_Name() {
 		return Merchant_Name;
 	}
+
 	public void setMerchant_Name(String Merchant_Name) {
 		this.Merchant_Name = Merchant_Name;
 	}
@@ -62,7 +72,13 @@ public class Record {
 		this.myDate = myDate;
 	}
 
-	public void DisplayInfoForm() {
-		//display a empty record form 
+	public String toString() {
+		String result = ""+id+",";
+		result += myDate+",";
+		result += Merchant_Name+",";
+		result += Category+",";
+		//result += currency.toString()+",";
+		result += amount+"\n";
+		return result;
 	}
 }

@@ -17,7 +17,7 @@ public class UserProgram {
 		case 0:		//create record
 			InputRecordInfo();
 
-			rc.CreateANewRecord(myDate,Merchant_Name,Category,Currency);
+			rc.CreateANewRecord(myDate,Merchant_Name,Category,amount);
 			break;
 		case 1:
 			rc.EraseRecord(SelectARecord());
