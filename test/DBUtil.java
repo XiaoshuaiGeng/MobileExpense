@@ -8,7 +8,6 @@ import java.sql.SQLException;
 public class DBUtil {
 	static String ip = "remotemysql.com";
 	static int port = 3306;
-	//static String database = "hutubill";
 	static String database = "1upG4O4v3S";
 	static String encoding = "verifyServerCertificate=false&useSSL=false";
 	static String loginName = "1upG4O4v3S";
@@ -21,11 +20,8 @@ public class DBUtil {
 		}
 	}
 
-	/**
-	 * 获取连接
-	 * 
-	 * @return
-	 */
+
+	
 	public static Connection getConn() {
 
 		String url = String.format("jdbc:mysql://%s:%d/%s?%s", ip, port, database, encoding);

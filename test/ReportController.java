@@ -93,7 +93,7 @@ public class ReportController {
         return Spend;
 	}
 	
-	public Report InvokeGenerateReport(Date StartDate, Date EndDate) {		//鐢熸垚涓�涓猺eport骞惰繑鍥�, report 涓嶄細鍐嶅瓨鍦╮eport list閲屼簡
+	public Report InvokeGenerateReport(Date StartDate, Date EndDate) {		
 		List<Record> rList= list(StartDate, EndDate);	// list the records from start date to end date
 		int TotalExpense = getSpendByRecordList(rList);
 		Report report = new Report(TotalExpense,StartDate,EndDate);
