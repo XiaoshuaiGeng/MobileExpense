@@ -1,19 +1,19 @@
-package comp311;
+
 
 import java.util.Calendar;
 import java.util.Date;
 
 /**
- * 日期工具类
+ * 鏃ユ湡宸ュ叿绫�
  * 
- * @author 于修彦
+ * @author 浜庝慨褰�
  *
  */
 public class DateUtil {
 	public static long millisecondsOfOneDay = 1000 * 60 * 60 * 24L;
 
 	/**
-	 * 两个不同Date类型的转换 <b>sql.Date是util.Date的子类</b>
+	 * 涓や釜涓嶅悓Date绫诲瀷鐨勮浆鎹� <b>sql.Date鏄痷til.Date鐨勫瓙绫�</b>
 	 * 
 	 * @param date
 	 *            java.util.date
@@ -24,7 +24,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * 获取今天的日期
+	 * 鑾峰彇浠婂ぉ鐨勬棩鏈�
 	 * 
 	 * @return java.util.date
 	 */
@@ -40,7 +40,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * 获取本月的月初第一天
+	 * 鑾峰彇鏈湀鐨勬湀鍒濈涓�澶�
 	 * 
 	 * @return java.util.date
 	 */
@@ -58,7 +58,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * 获取月末
+	 * 鑾峰彇鏈堟湯
 	 * 
 	 * @return
 	 */
@@ -78,7 +78,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * 获取本月一共多少天
+	 * 鑾峰彇鏈湀涓�鍏卞灏戝ぉ
 	 * 
 	 * @return
 	 */
@@ -89,7 +89,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * 获取本月还剩多少天（不算今天）
+	 * 鑾峰彇鏈湀杩樺墿澶氬皯澶╋紙涓嶇畻浠婂ぉ锛�
 	 * 
 	 * @return
 	 */
@@ -101,7 +101,7 @@ public class DateUtil {
 	}
 
 	/**
-	 * 获取本月已经过了多少天（加上今天）
+	 * 鑾峰彇鏈湀宸茬粡杩囦簡澶氬皯澶╋紙鍔犱笂浠婂ぉ锛�
 	 * 
 	 * @return
 	 */

@@ -1,4 +1,4 @@
-package comp311;
+
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ public class Record {
 	private String Merchant_Name;
 	private int id;
 	private String Category;
-	//private int Currency;	//是转化过的USD, 之前需要根据currency rate and input转换
+	//private int Currency;	//鏄浆鍖栬繃鐨刄SD, 涔嬪墠闇�瑕佹牴鎹甤urrency rate and input杞崲
 	private double amount;
 	
 	public Record() {

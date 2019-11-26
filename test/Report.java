@@ -1,4 +1,4 @@
-package comp311;
+
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ public class Report {
 	private Date StartDate;		//report's attributes
 	private Date EndDate;
 	private int TotalExpense;
-	private String ReportTitle;	//大概是报告创建日期
+	private String ReportTitle;	//澶ф鏄姤鍛婂垱寤烘棩鏈�
 	
 	public Report(int TotalExpense,Date StartDate,Date EndDate) {
 		this.TotalExpense=TotalExpense;

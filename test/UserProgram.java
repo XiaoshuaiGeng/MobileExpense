@@ -1,4 +1,4 @@
-package comp311;
+
 
 import java.util.Date;
 import java.util.List;
@@ -35,18 +35,18 @@ public class UserProgram {
 			InputDateInterval();
 			ReportController reportc=new ReportController();
 			reportc.InvokeGenerateReport(StartDate, EndDate).DisplayReport(); 
-			//还有一个choose monthly/daily/yearly	
+			//杩樻湁涓�涓猚hoose monthly/daily/yearly	
 			break;
 		}
 		
 	}
 	
 	public void InputRecordInfo() {
-		//输入创建record时的记录信息
+		//杈撳叆鍒涘缓record鏃剁殑璁板綍淇℃伅
 	}
 	
 	/*public int SelectARecord() {
-		//返回选中的record的id
+		//杩斿洖閫変腑鐨剅ecord鐨刬d
 	}*/
 	
 	public void InputDateInterval() {
