@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Report {
 	private Date StartDate;		//report's attributes
-	private Date EndDate;
+	private Date EndDate;		
 	private int TotalExpense;
-	private String ReportTitle;	//澶ф鏄姤鍛婂垱寤烘棩鏈�
+	private String ReportTitle;	
 	
 	public Report(int TotalExpense,Date StartDate,Date EndDate) {
 		this.TotalExpense=TotalExpense;

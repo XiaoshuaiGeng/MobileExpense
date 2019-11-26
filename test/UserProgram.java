@@ -4,11 +4,6 @@ import java.util.Date;
 import java.util.List;
 
 public class UserProgram {
-	private Date myDate;		//record's attributes
-	private String Merchant_Name;
-	private int id;
-	private String Category;
-	private int Currency;
 	
 	private int SelectionNum;
 	
@@ -17,25 +12,24 @@ public class UserProgram {
 	//private int TotalExpense;
 	
 	public void CreateOperation(int SelectionNum) {
+		RecordController rc=new RecordController();
 		switch(SelectionNum) {
 		case 0:		//create record
 			InputRecordInfo();
-			RecordController rc1=new RecordController();
-			rc1.CreateANewRecord(myDate,Merchant_Name,Category,Currency);
+
+			rc.CreateANewRecord(myDate,Merchant_Name,Category,Currency);
 			break;
 		case 1:
-			RecordController rc2=new RecordController();
-			//rc2.EraseRecord(SelectARecord());
+			rc.EraseRecord(SelectARecord());
 			break;
 		case 2:
-			RecordController rc3=new RecordController();
+
 			//rc3.EditRecord(SelectARecord());		//undefined so far
 			break;
 		case 3:		//generate and display report
 			InputDateInterval();
 			ReportController reportc=new ReportController();
-			reportc.InvokeGenerateReport(StartDate, EndDate).DisplayReport(); 
-			//杩樻湁涓�涓猚hoose monthly/daily/yearly	
+			reportc.InvokeGenerateReport(StartDate, EndDate).DisplayReport();
 			break;
 		}
 		

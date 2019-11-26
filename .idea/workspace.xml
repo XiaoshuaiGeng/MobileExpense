@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae57ecd8-5280-46af-987b-7fe9ded6414a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DBUtil.java" afterDir="false" />
+    <list default="true" id="34bedd68-5125-44b8-ace8-c6093552854e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MobileExpense.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/RecordList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MobileExpense.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL_Connection_Sample/DButil.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL_Connection_Sample/DButil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/DBUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/RecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RecordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Report.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ReportController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/UserProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UserProgram.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/UserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UserProgram.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,15 +30,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1UAe6HProEkk1x5K4CL0UriTQtz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1UAkykDCefhZmgtBfWUMsDFDiQO" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MobileExpense_backup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -39,17 +76,31 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="UserProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserProgram" />
+      <module name="MobileExpense" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserProgram" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae57ecd8-5280-46af-987b-7fe9ded6414a" name="Default Changelist" comment="" />
-      <created>1574803652448</created>
+      <changelist id="34bedd68-5125-44b8-ace8-c6093552854e" name="Default Changelist" comment="" />
+      <created>1574807043267</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574803652448</updated>
-      <workItem from="1574803669403" duration="308000" />
+      <updated>1574807043267</updated>
+      <workItem from="1574807044982" duration="1555000" />
     </task>
     <servers />
   </component>

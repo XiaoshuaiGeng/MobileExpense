@@ -1,15 +1,10 @@
-package util;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- * 数据库工具类
- *
- * @author 于修彦
- *
- */
+
 public class DBUtil {
 	static String ip = "remotemysql.com";
 	static int port = 3306;
