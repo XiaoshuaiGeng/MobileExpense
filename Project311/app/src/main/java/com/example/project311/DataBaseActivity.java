@@ -55,6 +55,17 @@ public class DataBaseActivity extends AppCompatActivity {
                 getData.execute("");
             }
         });
+
+        Button backbtn = (Button) findViewById(R.id.backBtn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(DataBaseActivity.this, HomepageActivity.class);
+                startActivity(intent1);
+            }
+        });
+
     }
 
     class GetData extends AsyncTask<String, String, String> {
