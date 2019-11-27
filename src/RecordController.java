@@ -54,10 +54,10 @@ public class RecordController {
 	* */
 
 	public int EraseRecord(int id) {
-        String sql = "Delete from Record where RID = ?";
+        String sql = "DELETE FROM Record WHERE RID =?";
 		try (Connection c = DBUtil.getConn(); PreparedStatement ps =  c.prepareStatement(sql);) {
             ps.setInt(1,id);
-			ps.execute(sql);
+			ps.execute();
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -69,8 +69,8 @@ public class RecordController {
 	//update the info of a record to DB
 	public void UpdateRecord(Record record) {
 
-		String sql = "update record set Amount= ?, Category= ?, Merchant_Name =?, Date = ? where RID = ?";
-		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql)) {
+		String sql = "update Record set Amount= ?, Category= ?, Merchant_Name =?, Date = ? where RID = ?";
+		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
 
 			ps.setDouble(1, record.getAmount());
 			ps.setString(2, record.getCategory());

@@ -4,18 +4,16 @@
     <list default="true" id="34bedd68-5125-44b8-ace8-c6093552854e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MobileExpense.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MobileExpense.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Currency.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/DateUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Record.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/RecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RecordController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/RecordList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RecordList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Report.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ReportController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/UserProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UserProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RecordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/UserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UserProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserProgram.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +75,8 @@
   </component>
   <component name="RunManager">
     <configuration name="UserProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="Java SE 12" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="UserProgram" />
       <module name="MobileExpense" />
       <method v="2">
@@ -101,7 +101,7 @@
       <updated>1574807043267</updated>
       <workItem from="1574807044982" duration="11403000" />
       <workItem from="1574823017946" duration="34000" />
-      <workItem from="1574825750678" duration="6454000" />
+      <workItem from="1574825750678" duration="9266000" />
     </task>
     <servers />
   </component>

@@ -6,11 +6,6 @@
       <src_folder value="file://$MODULE_DIR$/test" expected_position="0" />
     </src_description>
   </component>
-  <component name="FacetManager">
-    <facet type="android" name="Android">
-      <configuration />
-    </facet>
-  </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/bin" />
     <exclude-output />
@@ -18,6 +13,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/MySQL_Connection_Sample" />
+      <excludeFolder url="file://$MODULE_DIR$/Project311" />
+      <excludeFolder url="file://$MODULE_DIR$/gen" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
