@@ -35,33 +35,13 @@
 
     <Button
         android:id="@+id/Create"
-        android:textSize="10dp"
-        android:layout_width="80dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_below="@+id/RecordList"
+        android:layout_marginTop="50dp"
         android:background="#75EB74"
         android:text="Create"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="400dp"/>
+        android:textSize="10dp" />
 
-    <Button
-        android:id="@+id/modify"
-        android:textSize="10dp"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:background="#75EB74"
-        android:text="Modify"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="165dp"/>
-
-    <Button
-        android:id="@+id/Erase"
-        android:textSize="10dp"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:background="#75EB74"
-        android:text="Erase"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="330dp"/>
 </RelativeLayout>

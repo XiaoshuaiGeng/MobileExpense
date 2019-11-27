@@ -24,7 +24,7 @@ public class LoginPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
 
         mBtnTextView = (Button) findViewById(R.id.ensureLogin);
-        System.out.println("!!!!!!!!");
+      //  System.out.println("!!!!!!!!");
         mBtnTextView.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v){
@@ -37,8 +37,7 @@ public class LoginPageActivity extends AppCompatActivity {
                 ELogin elg = new ELogin(name, pwd);
                 elg.execute();
 
-                Intent intent = new Intent(LoginPageActivity.this, HomepageActivity.class);
-                startActivity(intent);
+
             }
         });
     }
@@ -55,7 +54,13 @@ public class LoginPageActivity extends AppCompatActivity {
 
         protected String doInBackground(String... params) {
 
-            Global.loginc.VerifyUserID(name, pwd);
+
+            if(Global.loginc.VerifyUserID(name, pwd))
+            {
+                Intent intent = new Intent(LoginPageActivity.this, HomepageActivity.class);
+                startActivity(intent);
+            }
+
             return null;
         }
 

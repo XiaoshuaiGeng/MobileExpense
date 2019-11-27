@@ -13,8 +13,17 @@ import java.sql.SQLException;
 public class LoginController {
 	private boolean IsUserIDValid;
 	private boolean IsUserPasswordValid;
-	
-	
+
+	private boolean access = false;
+
+	public void setAccess(boolean access){
+	    this.access = access;
+    }
+
+    public boolean getAccess(){
+	    return access;
+    }
+
 	public boolean VerifyUserID(String UserName) {		//check if User is already exist
 		String sql = "select * from Login where Username = ?";
 		IsUserIDValid = false;
@@ -34,15 +43,15 @@ public class LoginController {
 	}
 	
 	public boolean VerifyUserID(String UserName,String Password) {
-		String sql = "select * from Login where UserName = ? and Password = ?";
-		IsUserPasswordValid = false;
+		String sql = "select * from Customer where username = ? and password = ?";
+        access = false;
 		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
 			ps.setString(1, UserName);
 			ps.setString(2, Password);
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
 				System.out.println("Welcome!");
-				IsUserPasswordValid=true;
+                access=true;
 			}else {
 				System.out.println("Wrong password");
 			}
@@ -50,6 +59,6 @@ public class LoginController {
 
 			e.printStackTrace();
 		}
-		return IsUserPasswordValid;
+		return access;
 	}
 }

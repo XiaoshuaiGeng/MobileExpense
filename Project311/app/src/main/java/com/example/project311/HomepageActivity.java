@@ -1,11 +1,14 @@
 package com.example.project311;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+@RequiresApi(api = Build.VERSION_CODES.KITKAT)
 
 public class HomepageActivity extends AppCompatActivity {
 
@@ -21,8 +24,10 @@ public class HomepageActivity extends AppCompatActivity {
         mBtnTextView.setOnClickListener(new View.OnClickListener(){
             //goto registar
             public void onClick(View v){
-                Intent intent = new Intent(HomepageActivity.this, DataBaseActivity.class);
+                Global.loginc.setAccess(false);
+                Intent intent = new Intent(HomepageActivity.this, LoginPageActivity.class);
                 startActivity(intent);
+
             }
         });
 
