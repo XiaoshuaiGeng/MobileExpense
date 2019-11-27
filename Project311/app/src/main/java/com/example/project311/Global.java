@@ -10,4 +10,5 @@ public class Global {
 
     public static RecordList records = new RecordList();
     public static RecordController recordc = new RecordController();
+    public static LoginController loginc = new LoginController();
 }
