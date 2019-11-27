@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -45,15 +46,16 @@ public class ListViewDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int rid = Global.records.recordList.get(index).getId();
-            Global.records.removeRecord(rid);
-
+                System.out.println("\n\n\nindex: "+index+" RID: "+rid +  "****************************" + Global.records.toString()+"\n\n\n");
+                Global.records.removeRecord(rid);
+            //    System.out.println("\n\n\n"+rid +  "!!!!!!!!!!!!delete!!!!!" + Global.records.toString()+"\n\n\n");
+               // System.out.println(rid +  "!!!!!!!!!!!!delete!!!!!" + Global.records.toString());
             Intent intent1 = new Intent(ListViewDetails.this, DataBaseActivity.class);
-
+              //  Global.records.removeRecord(rid);
             startActivity(intent1);
-          //  EraseData ed = new EraseData();
-          //  ed.execute();
-          //  Global.recordc.EraseRecord(rid);
-            System.out.println(rid +  "!!!!!!!!!!!!delete!!!!!" + Global.records.toString());
+            EraseData ed = new EraseData();
+            ed.execute(String.valueOf(rid));
+
             }
         });
 
@@ -69,23 +71,21 @@ public class ListViewDetails extends AppCompatActivity {
         });
     }
 
-    /*
+
     class EraseData extends AsyncTask<String, String, String> {
         @Override
         protected String doInBackground(String... params) {
-            Connection conn = null;
-            Statement stmt = null;
+
+            //   Global.recordc.EraseRecord(rid);
 
             return null;
         }
 
         protected void onPostExecute(String msg)
         {
-
-            if(!Global.records.isEmpty())
-            {
-                Global.recordc.EraseRecord(rid);
+            if (!Global.records.isEmpty()) {
+                Global.recordc.EraseRecord(Integer.parseInt(msg));
             }
         }
-     */
+    }
 }
