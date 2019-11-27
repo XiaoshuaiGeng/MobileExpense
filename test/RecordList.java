@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecordList {
     private ArrayList<Record> recordList;
@@ -44,5 +45,9 @@ public class RecordList {
             result += record.toString();
         }
         return result;
+    }
+
+    public List<Record> ToList(){
+        return recordList;
     }
 }

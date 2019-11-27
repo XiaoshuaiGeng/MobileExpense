@@ -69,8 +69,8 @@ public class RecordController {
 		return id;
 	}
 
-	
-	public void UpdateRecord(Record record) {		//update the info of a record to DB
+	//update the info of a record to DB
+	public void UpdateRecord(Record record) {
 
 		String sql = "update record set Amount= ?, Category= ?, Merchant_Name =?, Date = ? where RID = ?";
 		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
