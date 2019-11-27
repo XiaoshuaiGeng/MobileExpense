@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+    <Button
+        android:id="@+id/Navigation"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="#75EB74"
+        android:text="Navigation"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="310dp"
+        android:background="#75EB74"
+        android:text="Logout"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/RecordList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#75EB74"
+        android:text="RecordList"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="200dp"
+        />
+
+    <Button
+        android:id="@+id/Create"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="#75EB74"
+        android:text="Create"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="550dp"/>
+
+    <Button
+        android:id="@+id/modify"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="#75EB74"
+        android:text="Modify"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="165dp"/>
+
+    <Button
+        android:id="@+id/Erase"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="#75EB74"
+        android:text="Erase"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="330dp"/>
+</RelativeLayout>

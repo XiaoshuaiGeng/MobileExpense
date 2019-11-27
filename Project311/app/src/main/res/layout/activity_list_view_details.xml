@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListViewDetails">
+
+    <EditText
+        android:id="@+id/Merchant2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Merchant Name"/>
+
+    <EditText
+        android:id="@+id/Catagory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Catagory"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/Currency"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Currency"
+        android:layout_marginTop="160dp"/>
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Amount"
+        android:layout_marginTop="240dp"/>
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Date"
+        android:layout_marginTop="320dp"/>
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Description"
+        android:layout_marginTop="400dp"/>
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="450dp"
+        android:background="#75EB74"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/cleanUp"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="#75EB74"
+        android:text="Erase"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="150dp"/>
+
+    <Button
+        android:id="@+id/Cancel"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="#75EB74"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="250dp"/>
+
+</RelativeLayout>

@@ -19,9 +19,9 @@ import java.util.List;
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 
 public class RecordController {
-	
+
 	public RecordController() {
-		
+
 	}
 
 	/*
@@ -65,26 +65,23 @@ public class RecordController {
 	 * */
 
 	public int EraseRecord(int id) {
-
-		try (Connection c = DBUtil.getConn(); Statement s = c.createStatement();) {
-
-			String sql = "delete from Record where RID = " + id;
-
-			s.execute(sql);
+		String sql = "Delete from Record where RID = ?";
+		try (Connection c = DBUtil.getConn(); PreparedStatement ps =  c.prepareStatement(sql);) {
+			ps.setInt(1,id);
+			ps.execute(sql);
 
 		} catch (SQLException e) {
-
 			e.printStackTrace();
 		}
 
 		return id;
 	}
 
-
-	public void UpdateRecord(Record record) {		//update the info of a record to DB
+	//update the info of a record to DB
+	public void UpdateRecord(Record record) {
 
 		String sql = "update record set Amount= ?, Category= ?, Merchant_Name =?, Date = ? where RID = ?";
-		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
+		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql)) {
 
 			ps.setDouble(1, record.getAmount());
 			ps.setString(2, record.getCategory());
@@ -128,7 +125,4 @@ public class RecordController {
 		}
 		return records;
 	}
-	
-	//need a EditRecord then
-	
 }

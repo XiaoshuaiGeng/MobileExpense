@@ -77,7 +77,7 @@ public class UserProgram {
 		c.set(2019,Calendar.APRIL,4);
 		Date temp = c.getTime();
 		//u.list.addRecord(u.recordc.CreateANewRecord(temp ,"computer","Electronics",1999.99));
-		//u.list.removeRecord(u.recordc.EraseRecord(9));
-		//System.out.println(u.DisplayRecordList());
+		u.list.removeRecord(u.recordc.EraseRecord(3));
+		System.out.println(u.DisplayRecordList());
 	}
 }
