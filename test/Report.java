@@ -5,16 +5,23 @@ import java.util.Date;
 public class Report {
 	private Date StartDate;		//report's attributes
 	private Date EndDate;		
-	private int TotalExpense;
+	private double TotalExpense;
 	private String ReportTitle;	
-	
-	public Report(int TotalExpense,Date StartDate,Date EndDate) {
+	private RecordList records;
+
+
+	public Report(double TotalExpense,Date StartDate,Date EndDate) {
 		this.TotalExpense=TotalExpense;
 		this.StartDate=StartDate;
 		this.EndDate=EndDate;
+		records = new RecordList();
 	}
-	
-	public void DisplayReport() {
-		// format the report including reportTitle
+
+    /**
+     *
+     * @return Return a RecordList that contains a list of Records between StartDate and EndDate
+     */
+	public RecordList getRecordList() {
+		return records;
 	}
 }

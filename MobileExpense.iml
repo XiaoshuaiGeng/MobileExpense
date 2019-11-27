@@ -20,7 +20,7 @@
       <excludeFolder url="file://$MODULE_DIR$/MySQL_Connection_Sample" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="module-library" exported="">
       <library name="mysql-connector-java-5.1.48-bin.jar">
         <CLASSES>

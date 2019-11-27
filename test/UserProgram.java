@@ -69,7 +69,7 @@ public class UserProgram {
 		record.toString();
 	}
 	
-	
+	//Tester Program
 	public static void main(String[] args) {
 		UserProgram u  = new UserProgram();
 		System.out.println(u.DisplayRecordList());

@@ -1,3 +1,5 @@
+import jdk.jfr.Description;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,7 @@ public class RecordList {
     public boolean addRecord(Record record){
         return recordList.add(record);
     }
+
 
     public Record removeRecord(int id){
         for (Record r: recordList) {
@@ -34,6 +37,17 @@ public class RecordList {
 
     public boolean isEmpty(){
         return recordList.isEmpty();
+    }
+
+    public double getTotalAmount(){
+        double total= 0.0;
+        if (isEmpty()){
+            return total;
+        }
+        for (Record record : recordList) {
+            total += record.getAmount();
+        }
+        return total;
     }
 
     public String toString(){
