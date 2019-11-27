@@ -14,34 +14,35 @@ import java.util.List;
 public class ReportController {
 	
 	//get all record from database, then store into a list
-	public List<Record> list() {
-		List<Record> records = new ArrayList<Record>();
-		String sql = "select * from Record";
-		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
-			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				Record record = new Record();
-				int id = rs.getInt("RID");
-				String Category = rs.getString("Category");
-				double amount = rs.getDouble("Amount");
-
-				String Merchant_Name = rs.getString("Merchant_Name");
-				Date date = rs.getDate("Date");
-
-				record.setMerchant_Name(Merchant_Name);
-				record.setCategory(Category);
-				record.setAmount(amount);
-				record.setMyDate(date);
-				record.setId(id);
-				records.add(record);
-			}
-		} catch (SQLException e) {
-
-			e.printStackTrace();
-		}
-		return records;
-	}
-	
+//	public RecordList list() {
+//		//List<Record> records = new ArrayList<Record>();
+//		RecordList list = new RecordList();
+//		String sql = "select * from Record";
+//		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
+//			ResultSet rs = ps.executeQuery();
+//			while (rs.next()) {
+//				Record record = new Record();
+//				int id = rs.getInt("RID");
+//				String Category = rs.getString("Category");
+//				double amount = rs.getDouble("Amount");
+//
+//				String Merchant_Name = rs.getString("Merchant_Name");
+//				Date date = rs.getDate("Date");
+//
+//				record.setMerchant_Name(Merchant_Name);
+//				record.setCategory(Category);
+//				record.setAmount(amount);
+//				record.setMyDate(date);
+//				record.setId(id);
+//				records.add(record);
+//			}
+//		} catch (SQLException e) {
+//
+//			e.printStackTrace();
+//		}
+//		return records;
+//	}
+//
 	public void DisplayRecordList(List<Record> records) {
 		for (Record record : records) {
            //printf each of record in the list
@@ -82,7 +83,7 @@ public class ReportController {
 	public List<Record> listThisMonth() {
 		return list(DateUtil.getMonthBegin(), DateUtil.getMonthEnd());
 	}
-	
+
 	public int getSpendByRecordList(List<Record> records) {
 		
 		int Spend = 0;

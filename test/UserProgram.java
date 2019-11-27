@@ -1,16 +1,20 @@
 
 
+import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
+
 
 public class UserProgram {
-	
+
+	private RecordController recordc = new RecordController();
+	private ReportController reportc = new ReportController();
+	private RecordList list = new RecordList();
 	private int SelectionNum;
 	
 	private Date StartDate;		//report's attributes
 	private Date EndDate;
 	//private int TotalExpense;
-	
+	/*
 	public void CreateOperation(int SelectionNum) {
 		RecordController rc=new RecordController();
 		switch(SelectionNum) {
@@ -42,26 +46,37 @@ public class UserProgram {
 	/*public int SelectARecord() {
 		//杩斿洖閫変腑鐨剅ecord鐨刬d
 	}*/
-	
-	public void InputDateInterval() {
-		//modify the local variable startdate & enddate
-		
-	}
-	
-	public void DisplayRecordList() {
+
+//
+//	public void InputDateInterval() {
+//		//modify the local variable startdate & enddate
+//
+//	}
+//
+	/*
+	* Return a string constains a list of record info
+	* */
+	public String DisplayRecordList() {
 		//retrieve whole list from database
-		ReportController reportc=new ReportController();
-		reportc.DisplayRecordList(reportc.list());		//reportc.list returns a list contains all records in DB
+		//ReportController reportc=new ReportController();
+		//reportc.DisplayRecordList(reportc.list());		//reportc.list returns a list contains all records in DB
+
+		return recordc.getRecordList().toString();
 	}
 	
 	public void DisplayEmptyForm() {
 		Record record = new Record();		//no attributes are initiated
-		record.DisplayInfoForm();
+		record.toString();
 	}
 	
 	
 	public static void main(String[] args) {
 		UserProgram u  = new UserProgram();
-		u.DisplayRecordList();
+		System.out.println(u.DisplayRecordList());
+		Calendar c = Calendar.getInstance();
+		c.set(2019,Calendar.APRIL,4);
+		Date temp = c.getTime();
+		u.list.addRecord(u.recordc.CreateANewRecord(temp ,"computer","Electronics",1999.99));
+		System.out.println(u.DisplayRecordList());
 	}
 }

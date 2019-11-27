@@ -22,29 +22,29 @@ public class RecordController {
 	}
 	*/
 
-	public Record CreateANewRecord(int RID,Date myDate,String Merchant_Name,String Category,double amount) {
-		Record record = new Record(RID,myDate,Merchant_Name,Category,amount);
-		String sql = "insert into record values(null,?,?,?,?)";
-		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
-			ps.setDouble(1, record.getAmount());
-			ps.setString(2, record.getCategory());
-			ps.setString(3, record.getMerchant_Name());
-			ps.setDate(4, DateUtil.util2sql(record.getMyDate()));
+	public Record CreateANewRecord(Date myDate,String Merchant_Name,String Category,double amount) {
+		//String sql = "insert into record values(null,?,?,?,?)";
+		String sql = "INSERT INTO `Record` (`RID`, `Merchant_Name`, `Date`, `Category`, `Amount`) VALUES (null,?,?,?,?)";
+		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);) {
+			ps.setString(1, Merchant_Name);
+			ps.setDate(2, DateUtil.util2sql(myDate));
+			ps.setString(3, Category);
+			ps.setDouble(4, amount);
 
 			ps.execute();
 
 			ResultSet rs = ps.getGeneratedKeys();		//id can be generated automatically ,no need to input id
 			if (rs.next()) {
-				int id = rs.getInt(1);
-				record.setId(id);
+				return new Record(rs.getInt(1),myDate,Merchant_Name,Category,amount);
 			}
+
 
 		} catch (SQLException e) {
 
 			e.printStackTrace();
 		}
 
-		return record;
+		return null;
 	}
 
 
@@ -89,7 +89,32 @@ public class RecordController {
 		}
 
 	}
-	
-	//need a EditRecord then
-	
+
+	public RecordList getRecordList(){
+		RecordList records = new RecordList();
+		String sql = "select * from Record";
+		try (Connection c = DBUtil.getConn(); PreparedStatement ps = c.prepareStatement(sql);) {
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				Record record = new Record();
+				int id = rs.getInt("RID");
+				String Category = rs.getString("Category");
+				double amount = rs.getDouble("Amount");
+
+				String Merchant_Name = rs.getString("Merchant_Name");
+				Date date = rs.getDate("Date");
+
+				record.setMerchant_Name(Merchant_Name);
+				record.setCategory(Category);
+				record.setAmount(amount);
+				record.setMyDate(date);
+				record.setId(id);
+				records.addRecord(record);
+			}
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		return records;
+	}
 }
