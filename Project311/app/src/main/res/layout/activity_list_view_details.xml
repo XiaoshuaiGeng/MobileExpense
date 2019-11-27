@@ -8,28 +8,17 @@
 
     <EditText
         android:id="@+id/Merchant2"
-        android:layout_width="341dp"
+        android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
         android:hint="Merchant Name" />
 
     <EditText
         android:id="@+id/Catagory"
-        android:layout_width="342dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Merchant2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
+        android:layout_marginTop="30dp"
         android:hint="Catagory" />
 
     <EditText
@@ -37,11 +26,9 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Catagory"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="27dp"
         android:hint="Currency" />
 
     <EditText
@@ -49,45 +36,38 @@
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Catagory"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="194dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="200dp"
+
+        android:layout_marginTop="27dp"
         android:hint="Amount" />
 
     <EditText
         android:id="@+id/Date"
-        android:layout_width="337dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Catagory"
-        android:layout_alignParentStart="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="38dp"
+
         android:layout_marginTop="104dp"
         android:hint="Date" />
 
     <EditText
         android:id="@+id/Description"
-        android:layout_width="307dp"
+        android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_below="@+id/Date"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
         android:hint="Description" />
 
     <Button
         android:id="@+id/Save"
-        android:layout_width="70dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Description"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="47dp"
         android:background="#04ADBF"
         android:text="Save"
         android:textColor="#FFFFFF"
@@ -95,12 +75,12 @@
 
     <Button
         android:id="@+id/cleanUp"
-        android:layout_width="74dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Description"
-        android:layout_marginStart="49dp"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginStart="-151dp"
+        android:layout_marginLeft="-151dp"
+        android:layout_marginTop="98dp"
         android:layout_toEndOf="@+id/Save"
         android:layout_toRightOf="@+id/Save"
         android:background="#04BFBF"
@@ -110,18 +90,12 @@
 
     <Button
         android:id="@+id/Cancel"
-        android:layout_width="69dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Description"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_toEndOf="@+id/cleanUp"
-        android:layout_toRightOf="@+id/cleanUp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="47dp"
+
         android:background="#04ADBF"
         android:text="Cancel"
         android:textColor="#FFFFFF"
