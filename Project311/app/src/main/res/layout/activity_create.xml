@@ -59,17 +59,6 @@
         android:textSize="10dp" />
 
     <Button
-        android:id="@+id/cleanUp"
-        android:textSize="10dp"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:background="#75EB74"
-        android:text="Erase"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="450dp"
-        android:layout_marginLeft="150dp"/>
-
-    <Button
         android:id="@+id/Cancel"
         android:textSize="10dp"
         android:layout_width="80dp"

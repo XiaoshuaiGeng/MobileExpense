@@ -53,8 +53,8 @@ public class ListViewDetails extends AppCompatActivity {
             Intent intent1 = new Intent(ListViewDetails.this, DataBaseActivity.class);
               //  Global.records.removeRecord(rid);
             startActivity(intent1);
-            EraseData ed = new EraseData();
-            ed.execute(String.valueOf(rid));
+            EraseData ed = new EraseData(rid);
+            ed.execute();
 
             }
         });
@@ -73,19 +73,28 @@ public class ListViewDetails extends AppCompatActivity {
 
 
     class EraseData extends AsyncTask<String, String, String> {
-        @Override
+        private int rid = -1;
+
+        public EraseData(int rid)
+        {
+            this.rid = rid;
+        }
         protected String doInBackground(String... params) {
 
+          //  System.out.println("111111111111111111111111111");
             //   Global.recordc.EraseRecord(rid);
-
+            Global.recordc.EraseRecord(rid);
+         //   System.out.println("222222222222222222222222222");
             return null;
         }
 
         protected void onPostExecute(String msg)
         {
+            /*
             if (!Global.records.isEmpty()) {
                 Global.recordc.EraseRecord(Integer.parseInt(msg));
             }
+             */
         }
     }
 }

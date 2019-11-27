@@ -30,7 +30,7 @@
         android:background="#75EB74"
         android:text="RecordList"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         />
 
     <Button
@@ -41,7 +41,7 @@
         android:background="#75EB74"
         android:text="Create"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="550dp"/>
+        android:layout_marginTop="400dp"/>
 
     <Button
         android:id="@+id/modify"
@@ -51,7 +51,7 @@
         android:background="#75EB74"
         android:text="Modify"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="400dp"
         android:layout_marginLeft="165dp"/>
 
     <Button
@@ -62,6 +62,6 @@
         android:background="#75EB74"
         android:text="Erase"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="400dp"
         android:layout_marginLeft="330dp"/>
 </RelativeLayout>
