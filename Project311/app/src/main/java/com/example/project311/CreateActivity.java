@@ -51,7 +51,7 @@ public class CreateActivity extends AppCompatActivity {
 
                 //  System.out.println("111111111111111111111111111");
                 //   Global.recordc.EraseRecord(rid);
-                Global.recordc.CreateANewRecord();
+                //Global.recordc.CreateANewRecord();
                 //   System.out.println("222222222222222222222222222");
                 return null;
             }
