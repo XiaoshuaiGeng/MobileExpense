@@ -52,13 +52,13 @@ public class CreateActivity extends AppCompatActivity {
 
                 red.setMerchant_Name(mTv.getText().toString());
                 red.setCategory(categTv.getText().toString());
-                red.setAmount(Integer.parseInt(amountTv.getText().toString()));
+                red.setAmount(Double.parseDouble(amountTv.getText().toString()));
                 try {
                     red.setMyDate(new SimpleDateFormat("yyyy-MM-dd").parse(dateTv.getText().toString())) ;
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-                System.out.println("00000000000000000000000000");
+
                 CreateData ed = new CreateData(red);
                 ed.execute();
                 Intent intent = new Intent(CreateActivity.this,HomepageActivity.class);

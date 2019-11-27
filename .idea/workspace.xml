@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34bedd68-5125-44b8-ace8-c6093552854e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/RecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/res/layout/item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/res/layout/item_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/mysql-connector-java-5.1.48-bin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/mysql-connector-java-5.1.48-bin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/mysql-connector-java-5.1.48-bin/build/.transforms/162faa4b142482f278dbbdbbc5277ac4.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/mysql-connector-java-5.1.48-bin/build/.transforms/162faa4b142482f278dbbdbbc5277ac4/mysql-connector-java-5.1.48-bin/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/mysql-connector-java-5.1.48-bin/build/.transforms/384e2d6e45d35ba99fe29643cb15989e.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project311/mysql-connector-java-5.1.48-bin/build/.transforms/a703a19c91b9c8df94dde590a9c49e88.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/UserProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UserProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/CreateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/CreateActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/ListViewDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project311/app/src/main/java/com/example/project311/ListViewDetails.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
