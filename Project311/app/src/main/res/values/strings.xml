@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Project311</string>
+    <string name="toast_msg">Welcome!!!</string>
 </resources>

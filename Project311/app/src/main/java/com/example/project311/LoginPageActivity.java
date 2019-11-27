@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,6 +58,7 @@ public class LoginPageActivity extends AppCompatActivity {
 
             if(Global.loginc.VerifyUserID(name, pwd))
             {
+//                Toast.makeText(getApplicationContext(), "WELCOME!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginPageActivity.this, HomepageActivity.class);
                 startActivity(intent);
             }

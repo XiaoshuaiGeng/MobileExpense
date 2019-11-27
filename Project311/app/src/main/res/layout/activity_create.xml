@@ -8,65 +8,122 @@
 
     <EditText
         android:id="@+id/Merchant2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Merchant Name"/>
+        android:layout_width="341dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:hint="Merchant Name" />
 
     <EditText
         android:id="@+id/Catagory"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Catagory"
-        android:layout_marginTop="80dp"/>
+        android:layout_width="349dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Merchant2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:hint="Catagory" />
 
     <EditText
         android:id="@+id/Currency"
-        android:layout_width="match_parent"
+        android:layout_width="140dp"
         android:layout_height="50dp"
-        android:hint="Currency"
-        android:layout_marginTop="160dp"/>
+        android:layout_below="@+id/Catagory"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:hint="Currency" />
 
     <EditText
         android:id="@+id/Amount"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Amount"
-        android:layout_marginTop="240dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Catagory"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Amount" />
 
     <EditText
         android:id="@+id/Date"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Date"
-        android:layout_marginTop="320dp"/>
+        android:layout_width="342dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/Catagory"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:hint="Date" />
 
     <EditText
         android:id="@+id/Description"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Description"
-        android:layout_marginTop="400dp"/>
+        android:layout_width="358dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/Date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:hint="Description" />
 
     <Button
         android:id="@+id/Save"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="450dp"
-        android:background="#75EB74"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Description"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="45dp"
+        android:background="#04ADBF"
         android:text="Save"
         android:textColor="#FFFFFF"
         android:textSize="10dp" />
 
     <Button
         android:id="@+id/Cancel"
-        android:textSize="10dp"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:background="#75EB74"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Description"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="83dp"
+        android:layout_toEndOf="@+id/Save"
+        android:layout_toRightOf="@+id/Save"
+        android:background="#04BFBF"
         android:text="Cancel"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="450dp"
-        android:layout_marginLeft="250dp"/>
+        android:textSize="10dp" />
 
 </RelativeLayout>

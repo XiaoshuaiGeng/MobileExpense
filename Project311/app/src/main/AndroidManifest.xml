@@ -22,9 +22,7 @@
         <activity android:name=".CreateActivity" />
         <activity android:name=".HomepageActivity" />
         <activity android:name=".ListViewDetails" />
-        <activity android:name=".DataBaseActivity">
-
-        </activity>
+        <activity android:name=".DataBaseActivity"></activity>
     </application>
 
 </manifest>

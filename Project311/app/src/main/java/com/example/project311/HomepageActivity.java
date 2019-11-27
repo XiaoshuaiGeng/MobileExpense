@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 
 public class HomepageActivity extends AppCompatActivity {
@@ -19,6 +20,8 @@ public class HomepageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
+        Toast.makeText(getApplicationContext(), "WELCOME!", Toast.LENGTH_LONG).show();
 
         mBtnTextView = (Button) findViewById(R.id.Logout);
         mBtnTextView.setOnClickListener(new View.OnClickListener(){
