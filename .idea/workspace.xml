@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34bedd68-5125-44b8-ace8-c6093552854e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RecordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RecordList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574807043267</updated>
-      <workItem from="1574807044982" duration="11403000" />
+      <workItem from="1574807044982" duration="12784000" />
     </task>
     <servers />
   </component>
