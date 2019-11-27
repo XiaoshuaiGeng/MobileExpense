@@ -58,7 +58,7 @@ public class CreateActivity extends AppCompatActivity {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-
+                System.out.println("00000000000000000000000000");
                 CreateData ed = new CreateData(red);
                 ed.execute();
                 Intent intent = new Intent(CreateActivity.this,HomepageActivity.class);
@@ -84,7 +84,7 @@ public class CreateActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             //  System.out.println("111111111111111111111111111");
             Global.recordc.CreateANewRecord(myDate,Merchant_Name,Category,amount);
-            //   System.out.println("222222222222222222222222222");
+           //    System.out.println("222222222222222222222222222");
             return null;
         }
 
