@@ -7,13 +7,3 @@
 #### Website
 https://remotemysql.com/databases.php
 
-Username | Password
------------- | -------------
-`xiaoshuaigeng@gmail.com` | 123456
-
-
-| Database    | 1upG4O4v3S     |
-| :------------- | :------------- |
-| IP    | remotemysql.com      |
-| Username     | 1upG4O4v3S       |
-| Password     | dl71eRA0sD       |
